@@ -1,0 +1,163 @@
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 0.9375rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+.main {
+    width: 69.5rem;
+    height: 100%;
+}
+.text-div {
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+.thin-header {
+    font-weight: 200;
+}
+.main-text {
+    color: var(--Grayish-Blue);
+    width: 28rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-div {
+    display: flex;
+    width: 69.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header {
+    color: var(--Very-Dark-Blue);
+}
+.card-text {
+    color: var(--Grayish-Blue);
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+.card-img {
+    float: right;
+    margin-top: 2rem;
+}
+/*.card-div div {
+    width: 22rem;
+    height: 15.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+}*/
+.supervisor {
+    width: 22rem;
+    height: 15.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    border-top: 5px solid var(--Cyan);
+    box-shadow: 0px 42px 77px -42px rgba(159, 186, 199, 0.781);
+}
+.team-builder {
+    width: 22rem;
+    height: 15.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    border-top: 5px solid var(--Red);
+    box-shadow: 0px 42px 77px -42px rgba(159, 186, 199, 0.781);
+    margin-bottom: 2rem;
+}
+.karma {
+    width: 22rem;
+    height: 15.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    border-top: 5px solid var(--Orange);
+    box-shadow: 0px 42px 77px -42px rgba(159, 186, 199, 0.781);
+}
+.calculator {
+    width: 22rem;
+    height: 15.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    border-top: 5px solid var(--Blue);
+    box-shadow: 0px 42px 77px -42px rgba(159, 186, 199, 0.781);
+}
+
+@media screen and (max-width:1112px) {
+    .main {
+        width: 100%;
+        min-width: 21rem;
+        height: 47rem;
+        margin-top: 5rem;
+    }
+    .thin-header {
+        font-size: 1.7rem;
+    }
+    .bold-header {
+        font-size: 1.7rem;
+    }
+    .main-text {
+        width: 70%;
+        min-width: 336px;
+        font-size: 1rem;
+    }
+    .card-div {
+        flex-direction: column;
+        width: 70%;
+        min-width: 21rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-img {
+        margin-top: 2rem;
+    }
+    .card-header {
+        font-size: 1.2rem;
+    }
+    .supervisor {
+        width: 70%;
+        min-width: 21rem;
+        margin-bottom: 2rem;
+    }
+    .team-karma {
+        width: 70%;
+        min-width: 21rem;
+    }
+    .team-builder {
+        width: 100%;
+        min-width: 21rem;
+    }
+    .karma {
+        width: 100%;
+        min-width: 21rem;
+        margin-bottom: 2rem;
+    }
+    .calculator {
+        width: 70%;
+        min-width: 21rem;
+        margin-bottom: 5rem;
+    }
+}
